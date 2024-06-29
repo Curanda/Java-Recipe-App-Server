@@ -1,4 +1,4 @@
-package org.example;
+package MODELS;
 
 import java.util.ArrayList;
 
@@ -66,9 +66,9 @@ public class Recipe {
     public void rateRecipe(int rate) {
         if (this.rating == 0.0) {
             this.rating = rate;
-            this.numberOfReviews++;
+            this.numberOfReviews += 1;
         } else {
-            this.numberOfReviews++;
+            this.numberOfReviews += 1;
             this.rating = (this.rating + rate) / this.numberOfReviews;
         }
     }
